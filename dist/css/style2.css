@@ -30,7 +30,9 @@ html {
 .aside2 p{
   font-size: 15px;
 }
-
+.aside2 h2{
+  color: purple;
+}
 .aside {
   /*background-color: #33b5e5;*/
   padding: 15px;
