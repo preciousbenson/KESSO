@@ -1,0 +1,45 @@
+/*Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+    box-sizing: border-box;
+}
+
+/*GALLERY*/
+.container_img > img{
+    /*max-width: 100%;*/
+    width: 100%;
+    height: 100%;
+}
+
+.container_img{
+    padding: 7px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+/*GALLERY*/
+
+/*SUPPORT*/
+.upportus{
+    font-size: 20px;
+    margin: 10px 0;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: [label] auto [input] 1fr;
+}
+.upportus > label{
+/*    background-color: greenyellow;*/
+    grid-column: label;
+}
+.upportus > input{
+    font-size: 1em;
+    grid-column: input;
+}
+
+.upportus > input[type="submit"]{
+    grid-column: span 2;
+}
+/*SUPPORT*/
