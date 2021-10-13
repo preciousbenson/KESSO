@@ -1,0 +1,296 @@
+:root{
+	--text-green:#628F19;
+	--title:#861BBF;
+	--light-purple:#5d12e7;
+}
+
+body{
+	font: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+#container_1{
+
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.title_wrapper{
+	flex: 50%;
+	padding: 5px;
+
+}
+#header_1 {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+#brand_title{
+	background-color: grey;
+	flex: 50%;
+}
+#brand_title h1 a{
+	padding: 5px;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 100px;
+	color: white;
+	/*text-transform: upp*/
+
+}
+
+#search_box{
+	flex: 50%;
+	background-color: grey;
+}
+
+#search_box p{
+	padding: 7px;
+	font-size: 20px;
+	font-weight: 100px;
+	color: white;
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+}
+/*removing floating elemenst effect*/
+
+.clear{
+	clear: both;
+}
+
+/*MENUS*/
+
+.page_menus{
+	height: 70px;
+	background: linear-gradient(#F8F594, #D5D533);
+	padding: 5px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.page_menus a{
+	/*float: left;*/
+	padding: 0 30px;
+	height: 30px;
+	border-right: 1px solid #5d12e7;
+}
+.page_menus a:last-child{
+	border-right: none;
+}
+.page_menus a{
+text-decoration: none;
+text-transform: uppercase;
+font-size: 19px;
+line-height: 30px;
+color: var(--light-purple);	
+-webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+.page_menus a:hover, .page_menus a.active{
+	font-size: 20px;
+	font-weight: bold;
+	color: #B314DB;
+}
+.top_img{
+		background-image: url("../images/cutfirewood.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*padding-bottom: 90px;*/
+}
+/*introductions_line*/
+.introductions_line{
+
+  padding: 30px;
+  margin: 16px 0;
+}
+.introductions_line h3{
+    font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+}
+
+.introductions_line p{
+    font-size: 25px; 
+    /*color: var(--text-green);*/
+    color: #fff;
+    font-weight: bold;
+    text-align: justify;
+}
+.blog_ine{
+  /*background-color: #cccccc;*/
+    padding: 20px;
+  margin: 5px 0;
+
+}
+.blog_ine h3{
+    font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+}
+
+.blog_ine p{
+    font-size: 25px; 
+    /*color: var(--text-green);*/
+    /*color: #cccccc;*/
+    text-align: justify;
+}
+
+/*SIDE*/
+.sidebars{
+  /*background-color: #cccccc;*/
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.sidebars p{
+padding: 5px;
+font-size: 20px;
+/*line-height: 20px*/
+}
+.side_wrapper{
+	/*both sideboxes will ocuppy half width of the conatiner*/
+/*we are using flex basis instead of flex gro => each sidebar will maintain ist size regardless of content with hold*/
+	flex: 50%;
+/*craeting gap btn the sidebars*/
+	padding: 5px; 
+}
+.sidebarDIV{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #BAF46F;
+    /*border-radius: 20px;*/
+    padding: 10px 30px;
+}
+
+
+.sidebarDIV h3{
+    color: #B314DB;
+    font-size: 20px;
+}
+
+.sidebarDIV a{
+    padding-top: 8px;   
+}
+#left_sideBar a{
+    padding: 4px 0 4px 10px;
+}
+
+#right_sideBar a{
+    padding: 17px 0 17px 70px;
+}
+.sidebarDIV a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5d12e7;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+.sidebarDIV a:hover, .sidebarDIV a.active{
+    text-decoration: none;
+    color: #B314DB;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+
+.footer{
+  background-color: #cccccc;
+  margin:10px 0;
+  padding: 5px;
+}
+.footer h1{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.footer p, li, a{
+	text-decoration: none;
+	list-style: none;
+	padding: 10px;
+	font-size: 16px;
+}
+/*to display grids*/
+.grid{
+	display: grid;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 100%; 
+}
+.grid_3{
+	grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.copyringt{
+	background-color: #F6F390;
+    text-align: center;
+    /*margin: 0 5px;*/
+    
+}
+.copyright p{
+    padding: 10px;
+    font-size: 16px;
+}
+/*on small screen , menus go vertical*/
+@media screen and (max-width: 700px){
+	.page_menus{
+		flex-direction: column;
+		align-content: center;
+
+	}
+
+	.page_menus a{
+		border-right: none;
+		/*font-size: 18px;*/
+		padding: 0 10px;
+		text-transform: none;	
+	}
+	#search_box{
+	/*min-width: 200px;*/
+	font-size: 16px;
+	margin:10px;
+	}
+
+	.text_search{
+	width: 150px;
+	}
+
+}
+/*//navbar*/
+@media screen and (max-width: 960px){
+	#header_1{
+		flex-direction: column;
+	}
+
+	#search_box{
+	margin: 0px;
+	/*font-size: */
+
+}
+
+}
+/*footer*/
+@media(max-width:768px){
+.grid
+{
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+}
+
+
