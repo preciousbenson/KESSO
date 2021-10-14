@@ -18,6 +18,14 @@ html {
   font-family: "Lucida Sans", sans-serif;
 }
 
+#lifekesso h2{
+  color: purple;
+}
+#lifekesso p{
+  font-size: 17px;
+  padding: 10px;
+}
+
 .aside2 {
   /*background-color: #33b5e5;*/
   background-color: #cccccc;
