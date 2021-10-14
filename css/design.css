@@ -123,7 +123,7 @@ color: var(--light-purple);
     /*color: var(--text-green);*/
     color: #fff;
     font-weight: bold;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 .blog_ine{
   /*background-color: #cccccc;*/
@@ -262,6 +262,7 @@ font-size: 20px;
 	}
 	#search_box{
 	/*min-width: 200px;*/
+	border-radius: 10px;
 	font-size: 16px;
 	margin:10px;
 	}
