@@ -19,7 +19,8 @@ html {
 }
 
 .aside2 {
-  background-color: #33b5e5;
+  /*background-color: #33b5e5;*/
+  background-color: #cccccc;
   font-size: 14px;
   padding: 10px;
   height: 200px;
@@ -31,7 +32,7 @@ html {
   font-size: 15px;
 }
 .aside2 h2{
-  color: purple;
+  color: #33b5e5;
 }
 .aside {
   /*background-color: #33b5e5;*/
