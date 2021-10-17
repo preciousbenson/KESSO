@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+/*downtime*/
+.offnow{
+    background-color: grey;
+    color: white;
+    padding: 5px;
+}
+/*.offnow h1*/
+
 .row::after {
   content: "";
   clear: both;
